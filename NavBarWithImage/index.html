@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+
+            <a class="logo" href="">logo</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Feature</a></li>
+                </ul>
+            </nav>
+            <a class="login_btn" href="#">Login</a>
+            <span class="open"><i class="fa fa-bars" aria-hidden="true"></i></span>
+            <span class="close"><i class=" fa fa-close" aria-hidden="true"></i></span>
+        </div>
+    </header>
+    <section>
+        <h3>test</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci obcaecati nostrum minima, numquam necessitatibus, et ex molestias reiciendis blanditiis mollitia voluptatem natus aspernatur. Animi sint quidem, voluptatum adipisci tempora accusantium minima temporibus eveniet officia amet repudiandae quam debitis quo vel veniam dicta possimus at non? Distinctio exercitationem corrupti deserunt magni?</p>
+    </section>
+
+
+
+    <script>
+        const BarBTN = document.getElementsByClassName("fa-bars")[0];
+        const span1 = document.getElementsByTagName("span")[0];
+        const span2 = document.getElementsByTagName("span")[1];
+        const nav = document.getElementsByTagName("nav")[0];
+        const CloseBTN = document.getElementsByClassName("fa-close")[0];
+
+
+        console.log(CloseBTN);
+        console.log(BarBTN);
+        console.log(span1);
+        console.log(span2);
+
+        // ---------On click on bar Button
+        BarBTN.onclick = function(){
+            nav.classList.add('open');
+            span1.classList.add("close");
+            span2.classList.remove("close");
+            span2.classList.add('open');
+
+        }
+
+        // ---------On click on Close Button
+        CloseBTN.onclick = function(){
+            nav.classList.remove("open");
+            span1.classList.add("open");
+            span1.classList.remove('close');
+            span2.classList.add("close");
+            span2.classList.remove('open');
+        }
+
+        
+    </script>
+</body>
+
+</html>
