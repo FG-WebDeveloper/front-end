@@ -1,0 +1,128 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* ---------------body------------------- */
+
+body{
+    background:url(/images/1.jpg);
+    background-size: cover; 
+    background-position: 30% 90%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+/* ---------------Header------------------- */
+
+header{
+    display: flex;
+    background-color: transparent;
+    height: 30rem;
+    width: 30rem;
+    margin: 2rem;
+
+}
+
+.login{
+    padding: 2rem;
+    
+}
+.login h1{
+    color: #07600f;
+    margin-top: 2rem;
+    padding: 1rem ;
+}
+.login form{
+    padding: 1rem;
+}
+.login .label{
+    display: block;
+    margin: 1rem 0;
+}
+
+.login .label input{
+    padding:  1rem ;
+    width: 100%;
+    border: 0.1rem solid #07600f;
+    border-radius: 2rem;
+    background-color: transparent;
+    color: #07600f;
+}
+
+.login input:focus{
+    color:#07600f;
+    outline: none;
+}
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+
+.checkbox label {
+    color: #B3B6C5;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.checkbox a {
+    color: #07600f;
+    text-decoration: none;
+}
+.login button{
+    padding:  1rem ;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    background-color: #07600f;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login{
+    height: 100%;
+    width: 100%;
+}
+.login .toSignup{
+    margin: 2rem ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #B3B6C5;
+    text-decoration: none;
+}
+.login .toSignup a{
+    text-decoration: none;
+    color: #07600f;
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .img{
+        display: none;
+    }
+    .login{
+        background-color: #ffffff;
+        height: 36rem;
+        /* backdrop-filter: blur(10px); */
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    body{
+        justify-content: center;
+    }
+    .checkbox ,.toSignup{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
